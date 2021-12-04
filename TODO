@@ -1,0 +1,11 @@
+Movements:
+- Move up
+- Move down
+- Move left
+- Move right
+
+Rotations:
+- Left
+- Right
+- Up (move back)
+- Down (move forward)
