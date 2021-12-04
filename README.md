@@ -2,7 +2,7 @@
 ___
 #### *This Repository will contain the source code for Tello which is the name of the drone I am going to use for educational purposes. I am also learning with the help of a tutorial that can be of use to you as well.*
 
-### The modules needed to be installed are:
+##### The modules needed to be installed are:
 * djitellopy
 * pygame
 * cv2
@@ -16,16 +16,23 @@ When making your files
 ```python
     from djitellopy import tello
 
-    from time import sleep
-    
+    import pygame
+
     import cv2
 ```
-##### Extra modulues are:
+##### Extra modulues used:
 * time
 * keyPressModule
 
+```python
+    from time import sleep
+
+    import keyPressModule as kpm
+```
+
+###### *Resources*
 [Tello-Drones](https://www.ryzerobotics.com/tello
-"Website") 
+"Website for Drones") 
 
 [Tutorial](https://www.youtube.com/watch?v=LmEcyQnfpDA
 "Approx 3 hours long")
