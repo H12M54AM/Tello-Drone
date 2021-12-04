@@ -11,6 +11,8 @@ ___
     pip3 install djitellopy
 
     pip3 install pygame
+
+    pip3 install cv2
 ```
 When making your files
 ```python
