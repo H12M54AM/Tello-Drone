@@ -1,6 +1,6 @@
 ### Tello-Drone
 ___
-#### *This Repository will contain the source code for Tello which is the name of the drone I am going to use for educational purposes. I am also learning with the help of a tutorial that can be of use to you as well.*
+#### *This Repository will contain the source code for Tello which is the name of the drone I am going to use for educational purposes. I am working with Python and a few lirbraries to suit the Tello Drone to operate correctly. I am also learning a little bit more of Python in the process to improve under a short time frame.*
 
 ##### The modules needed to be installed are:
 * djitellopy
@@ -37,8 +37,7 @@ When making your files
 [Tutorial](https://www.youtube.com/watch?v=LmEcyQnfpDA
 "Approx 3 hours long")
 
-[DJI-Drone-Interface](https://github.com/damiafuentes/DJITelloPy)
-
-###### *I am working with Python and lirbraries to suit the Tello Drone to operate*
+[DJI-Drone-Interface](https://github.com/damiafuentes/DJITelloPy
+"GitHub Repository")
 
 ![Python Logo](https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png)
