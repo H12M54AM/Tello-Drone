@@ -1,5 +1,5 @@
-### Tello-Drone
-___
+## Tello-Drone
+
 #### *This Repository will contain the source code for Tello which is the name of the drone I am going to use for educational purposes. I am working with Python and a few lirbraries to suit the Tello Drone to operate correctly. I am also learning a little bit more of Python in the process to improve under a short time frame.*
 
 ##### The modules needed to be installed are:
