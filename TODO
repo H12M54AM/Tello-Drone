@@ -1,3 +1,11 @@
+Plan:
+- Takeoff
+- Move Forward
+- Rotate counter-clockwise 90˚
+- Move Forward
+- Rotate clockwise 90˚
+- Land
+
 Movements:
 - Move up
 - Move down
