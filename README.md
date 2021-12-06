@@ -1,4 +1,4 @@
-### Tello-Drone
+## Tello-Drone
 
 #### *This Repository will contain the source code for Tello which is the name of the drone I am going to use for educational purposes. I am working with Python and a few lirbraries to suit the Tello Drone and operate it correctly. I am also learning a little bit more of Python in the process to improve under a short time frame.*
 
@@ -15,6 +15,7 @@ Install normally if you use pip
 
     pip install cv2
 ```
+
 For those who use Python3, use pip3
 ```
     pip3 install djitellopy
@@ -23,6 +24,7 @@ For those who use Python3, use pip3
 
     pip3 install cv2
 ```
+
 When making your files
 ```python
     from djitellopy import tello
@@ -31,6 +33,7 @@ When making your files
 
     import cv2
 ```
+
 ##### Extra modulues used:
 * time
 * keyPressModule
