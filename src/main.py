@@ -4,9 +4,9 @@ from getBattery import baReminder
 
 drone = tello.Tello()
 drone.connect()
-
 drone.takeoff()
 drone.rotate_clockwise(90)
+sleep(1)
 drone.get_barometer()
 drone.move_forward(40)
 drone.rotate_clockwise(90)

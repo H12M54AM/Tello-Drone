@@ -1,8 +1,12 @@
 from djitellopy import tello
 import cv2
 
+# This file is used for the eyes of the drone. Some things might be missing but
+# this should work
+
 drone = tello.Tello()
 # 'connect' will take care of the IP adress and connection
+drone.connect()
 drone.stream_on()
 
 while True:

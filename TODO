@@ -1,23 +1,40 @@
-Plan [*]:
-- Takeoff
-- Move Forward
-- Rotate counter-clockwise 90˚
-- Move Forward
-- Rotate clockwise 90˚
-- Land
+Plan 1.0.1 [*]:
+  - Takeoff
+  - Move Forward
+  - Rotate counter-clockwise 90˚
+  - Move Forward
+  - Rotate clockwise 90˚
+  - Land
 
-getBattery:
-- Find a way to display the current battery percentage at a certain time
-# Mainly as a reminder of where you are
+Plan 1.0.2 []:
+  - Learn about how its height or altitude can be used in the program
+  - Get the drone to display the current altitude live in the terminal
+  - Introduce tilting to the drone
+  - Get the drone to see it's surroundings
+  - Hover
 
-Movements:
-- Move up
-- Move down
-- Move left
-- Move right
+Plan 1.0.3 []:
+  - Security gaurd (parking sensor)
+  - Use OpenCV to understand the distance of things
+  - Automate some manual tasks (looking for a place to land)
+  - Control the drone by using the keyboard
+  - Tricks with the drone (flips)
+  - Move around on it's own and look for the landing pad to land
 
-Rotations:
-- Left
-- Right
-- Up (move back)
-- Down (move forward)
+Plan 1.0.4 []:
+  - Stabilize the drone midflight
+
+
+getBattery[*]:
+  - Find a way to display the current battery percentage at a certain time
+  # Mainly as a reminder of where you are
+
+Movements [*]:
+  - Move up
+  - Move down
+  - Move left
+  - Move right
+
+Rotations [*]:
+  - Left
+  - Right

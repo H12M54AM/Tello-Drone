@@ -2,13 +2,6 @@ from djitellopy import tello
 from time import sleep
 from getBattery import baReminder
 
-# Plan:
-# - Takeoff
-# - Move Forward
-# - Rotate counter-clockwise 90˚
-# - Move Forward
-# - Rotate clockwise 90˚
-# - Land
 
 drone = tello.Tello()
 drone.connect()
@@ -18,14 +11,14 @@ drone.connect()
 def movement():
     drone.takeoff()
     drone.move_forward(20)
-    drone.sleep()
+    sleep(1.5)
 
     drone.rotate_counter_clockwise(90)
-    drone.sleep()
+    sleep(1.5)
 
     drone.move_forward(20)
     drone.rotate_clockwise(90)
-    drone.sleep()
+    sleep(1.5)
 
     drone.land()
 
