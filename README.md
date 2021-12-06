@@ -7,6 +7,15 @@
 * pygame
 * cv2
 
+Install normally if you use pip
+```
+    pip install djitellopy
+    
+    pip install pygame
+
+    pip install cv2
+```
+For those who use Python3, use pip3
 ```
     pip3 install djitellopy
 
