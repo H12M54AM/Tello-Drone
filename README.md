@@ -42,6 +42,8 @@ When making your files
     from time import sleep
 
     import keyPressModule as kpm
+
+    import manuveur
 ```
 
 ###### *Resources*
