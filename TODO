@@ -6,6 +6,10 @@ Plan [*]:
 - Rotate clockwise 90˚
 - Land
 
+getBattery:
+- Find a way to display the current battery percentage at a certain time
+# Mainly as a reminder of where you are
+
 Movements:
 - Move up
 - Move down

@@ -1,5 +1,6 @@
 from djitellopy import tello
 from time import sleep
+from getBattery import baReminder
 
 # Plan:
 # - Takeoff
@@ -29,3 +30,4 @@ def movement():
     drone.land()
 
 movement()
+baReminder()
