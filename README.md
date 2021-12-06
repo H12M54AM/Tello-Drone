@@ -1,11 +1,13 @@
 ## Tello-Drone
 
-#### *This Repository will contain the source code for Tello which is the name of the drone I am going to use for educational purposes. I am working with Python and a few lirbraries to suit the Tello Drone and operate it correctly. I am also learning a little bit more of Python in the process to improve under a short time frame.*
+#### *This Repository will contain the source code for Tello which is the name of the drone I am going to use for educational purposes. I am working with Python and a few lirbraries to suit the Tello Drone and operate it correctly. I am also learning a little bit more of Python in the process to improve under a short time frame. I am currently using Visual Studio Code as my code editor and I want to mention that the tutorial video I have linked uses Pycharm, which is great too, but I am much more comfortable with Vscode. Plus the installations are not that different too. So I would say, go with what you are comfortable with because these just are tools. I can just get this done faster with vscode*
 
 ##### The modules needed to be installed are:
 * djitellopy
 * pygame
 * cv2
+
+##### The version of Python used is 3.7.6
 
 Install normally if you use pip
 ```
