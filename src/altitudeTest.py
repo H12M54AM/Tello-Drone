@@ -7,7 +7,6 @@ from time import sleep
 # works, then it will go into 'main.py'
 drone = tello.Tello()
 drone.connect()
-
 baReminder()
 drone.takeoff()
 drone.move_forward(30)
