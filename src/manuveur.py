@@ -10,15 +10,9 @@ from time import sleep
 # - Land
 
 drone = tello.Tello()
-
-def connnection():
-    drone.connect()
-    print("The Battery is: " + drone.get_battery() + "percent")
+drone.connect()
 
 # Make a function that displays the height of the drone when it's off of the ground
-def heightDisplay():
-    while drone.takeoff == True:
-        print(drone.get_height())
 
 def movement():
     drone.takeoff()
@@ -33,3 +27,5 @@ def movement():
     drone.sleep()
 
     drone.land()
+
+movement()
