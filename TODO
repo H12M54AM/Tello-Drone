@@ -6,15 +6,15 @@ Plan 1.0.1 [*]:
   - Rotate clockwise 90˚
   - Land
 
-Plan 1.0.2 []:
-  - Learn about how its height or altitude can be used in the program
+Plan 1.0.2 [*]:
+  √ Learn about how its height or altitude can be used in the program
     - Maybe use some maths
-  - Get the drone to display the current altitude live in the terminal
+  √ Get the drone to display the current altitude live in the terminal
     - For loop
     - While loop
     - if statement
     - switch
-    
+
   - Introduce tilting to the drone
   - Get the drone to see it's surroundings
   - Hover

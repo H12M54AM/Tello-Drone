@@ -1,5 +1,5 @@
 from djitellopy import tello
-from modules import baReminder
+from getBattery import baReminder
 from time import sleep
 
 # This file contains code that will always or most of the time, check the height 
@@ -12,8 +12,8 @@ drone.takeoff()
 drone.move_forward(30)
 sleep(1.5)
 drone.rotate_clockwise(90)
-drone.move_forward(30)
+drone.move_forward(40)
 sleep(1.5)
-drone.get_height()
+print(drone.get_height())
 drone.land()
 baReminder()
