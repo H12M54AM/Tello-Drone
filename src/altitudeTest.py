@@ -1,5 +1,5 @@
 from djitellopy import tello
-from getBattery import baReminder
+from modules import baReminder
 from time import sleep
 
 # This file contains code that will always or most of the time, check the height 

@@ -1,6 +1,6 @@
 from djitellopy import tello
-from time import sleep
-from getBattery import baReminder
+from time import sleep 
+from modules import baReminder
 
 
 drone = tello.Tello()
