@@ -10,13 +10,13 @@ drone.takeoff()
 drone.move_forward(40)
 
 # Displays the height between the bottom of the drone to the ground
-print(height + "cm")
+print(height, "cm")
 sleep(1)
 
 drone.move_back(40)
 
 # Displays the height between the bottom of the drone to the ground
-print(height + "cm")
+print(height, "cm")
 sleep(1)
 
 drone.land()
