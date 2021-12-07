@@ -18,7 +18,7 @@ drone.rotate_clockwise(90)
 drone.land()
 print(curD)
 
-# Function checks the battery status and prints out for every 10% decresed
+# Function checks the battery status and prints out the exact percentage
 baReminder()
 
 
