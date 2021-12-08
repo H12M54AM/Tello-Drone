@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 TODO
+imgs/
 .Python
 build/
 develop-eggs/

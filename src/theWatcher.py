@@ -1,12 +1,18 @@
 from djitellopy import tello
 from modules import keyPressModule as kpm
-from time import sleep
+import time  
 from getBattery import baReminder 
+import cv2
+
+# This is the combination of both keyboardControl and imageCapture
 # make the string in 'getKey' the selected key to use
 kpm.init()
 drone = tello.Tello()
+sleep = time.sleep()
 drone.connect()
 baReminder()
+drone.streamon
+global img
 
 def getKeyBoardInput():
     # lr is left & right
@@ -30,10 +36,20 @@ def getKeyBoardInput():
 
     if kpm.getKey("q"): drone.land()
     if kpm.getKey("t"): drone.takeoff()
+
+    # screenshots img
+    if kpm.getKey("c"): 
+        cv2.iamwrite(f'imgs/{time.time()}.jpg',img)
+        # Delay
+        sleep(0.3)
+        
     return [lr, fb, ud, yv]
 
 
 while True:
     vals = getKeyBoardInput() 
     drone.send_rc_control(vals[0], vals[1], vals[2], vals[3])
-    sleep(0.05)
+    img = drone.get_frame_read().frame
+    #img = cv2.resize(img, (360, 240))
+    cv2.imshow("Image", img)
+    cv2.waitKey(1)
