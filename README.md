@@ -46,6 +46,8 @@ When making your files
     import keyPressModule as kpm
 
     import manuveur
+
+    from getBattery import baReminder
 ```
 
 ###### *Resources*
