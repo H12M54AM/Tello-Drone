@@ -8,10 +8,9 @@ import cv2
 # make the string in 'getKey' the selected key to use
 kpm.init()
 drone = tello.Tello()
-sleep = time.sleep()
 drone.connect()
 baReminder()
-drone.streamon
+drone.streamon()
 global img
 
 def getKeyBoardInput():
@@ -20,28 +19,38 @@ def getKeyBoardInput():
     # ud is up & down
     # yv is yaw & velocity
     lr, fb, ud,  yv = 0, 0, 0, 0
-    speed = 50
+    speed = 40
 
+    # Move Left
     if kpm.getKey("LEFT"): lr  = -speed 
+    # Move Right
     elif kpm.getKey("RIGHT"): lr  = speed 
 
-    if kpm.getKey("UP"): fb  = speed 
-    elif kpm.getKey("DOWN"): fb  = -speed
+    # Forward
+    if kpm.getKey("w"): fb  = speed 
+    # Backward
+    elif kpm.getKey("s"): fb  = -speed
 
-    if kpm.getKey("w"): ud  = speed
-    elif kpm.getKey("s"): ud  = -speed
+    # Up 
+    if kpm.getKey("UP"): ud  = speed
+    # Down
+    elif kpm.getKey("DOWN"): ud  = -speed
 
-    if kpm.getKey("a"): yv  = speed
-    elif kpm.getKey("d"): yv  = -speed
+    # Turn Left
+    if kpm.getKey("d"): yv  = speed
+    # Turn Right
+    elif kpm.getKey("a"): yv  = -speed
 
-    if kpm.getKey("q"): drone.land()
+    # Takeoff
     if kpm.getKey("t"): drone.takeoff()
+    # Land
+    if kpm.getKey("l"): drone.land()
 
     # screenshots img
     if kpm.getKey("c"): 
         cv2.iamwrite(f'imgs/{time.time()}.jpg',img)
         # Delay
-        sleep(0.3)
+        time.sleep(0.3)
         
     return [lr, fb, ud, yv]
 
@@ -50,6 +59,6 @@ while True:
     vals = getKeyBoardInput() 
     drone.send_rc_control(vals[0], vals[1], vals[2], vals[3])
     img = drone.get_frame_read().frame
-    #img = cv2.resize(img, (360, 240))
+    img = cv2.resize(img, (500, 350))
     cv2.imshow("Image", img)
     cv2.waitKey(1)

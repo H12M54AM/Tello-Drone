@@ -15,25 +15,25 @@ Plan 1.0.2 [*]:
     - if statement
     - switch
 
-  - Introduce tilting to the drone
-  - Get the drone to see it's surroundings
-  - Hover
+  √ Introduce tilting to the drone
+  √ Get the drone to see it's surroundings
+  √ Hover
 
 Plan 1.0.3 []:
   - Security gaurd (parking sensor)
   - Use OpenCV to understand the distance of things
   - Automate some manual tasks (looking for a place to land)
-  - Control the drone by using the keyboard
+  √ Control the drone by using the keyboard
   - Tricks with the drone (flips)
   - Move around on it's own and look for the landing pad to land
 
-Plan 1.0.4 []:
-  - Stabilize the drone midflight
+Plan 1.0.4 [*]:
+  √ Stabilize the drone midflight
 
 
 getBattery[*]:
-  - Find a way to display the current battery percentage at a certain time
-  # Mainly as a reminder of where you are
+  √ Find a way to display the current battery percentage at a certain time
+    - Mainly as a reminder of where you are
 
 Movements [*]:
   - Move up

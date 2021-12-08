@@ -11,7 +11,7 @@ drone.streamon()
 def streamith():
     while True:
         img = drone.get_frame_read().frame
-        #img = cv2.resize(img, (360, 240))
+        img = cv2.resize(img, (500, 350))
         cv2.imshow("Image", img)
         cv2.waitKey(1)
 

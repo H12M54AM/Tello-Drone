@@ -21,5 +21,3 @@ print(curD)
 
 # Function checks the battery status and prints out the exact percentage
 baReminder()
-
-
