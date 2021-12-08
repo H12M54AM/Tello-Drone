@@ -2,7 +2,7 @@ from time import sleep
 from djitellopy import tello
 from getBattery import baReminder
 import datetime
-from imageCapture import streamith
+from Test.imageCapture import streamith
 
 # the absolute main file for the main activity
 curD = datetime.datetime.now()
