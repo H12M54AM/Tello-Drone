@@ -19,7 +19,7 @@ def getKeyBoardInput():
     # ud is up & down
     # yv is yaw & velocity
     lr, fb, ud,  yv = 0, 0, 0, 0
-    speed = 40
+    speed = 50
 
     # Move Left
     if kpm.getKey("LEFT"): lr  = -speed 
@@ -46,19 +46,25 @@ def getKeyBoardInput():
     # Land
     if kpm.getKey("l"): drone.land()
 
+    if kpm.getKey("z"): drone.flip_forward()
+
+    if kpm.getKey("x"): drone.flip_back()
+
+    if kpm.getKey("f"): drone.get_flight_time()
     # screenshots img
     if kpm.getKey("c"): 
-        cv2.iamwrite(f'imgs/{time.time()}.jpg',img)
+        cv2.iamwrite(f'src/imgs/{time.time()}.jpg',img)
         # Delay
-        time.sleep(0.3)
+        time.sleep(0.3) # For some reason the application crashes whenever I take a screenshot
         
     return [lr, fb, ud, yv]
 
+baReminder()
 
 while True:
     vals = getKeyBoardInput() 
     drone.send_rc_control(vals[0], vals[1], vals[2], vals[3])
     img = drone.get_frame_read().frame
-    img = cv2.resize(img, (500, 350))
+    img = cv2.resize(img, (500, 400))
     cv2.imshow("Image", img)
     cv2.waitKey(1)
