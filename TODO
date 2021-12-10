@@ -24,7 +24,7 @@ Plan 1.0.3 []:
   - Use OpenCV to understand the distance of things
   - Automate some manual tasks (looking for a place to land)
   √ Control the drone by using the keyboard
-  - Tricks with the drone (flips)
+  √ Tricks with the drone (flips)
   - Move around on it's own and look for the landing pad to land
 
 Plan 1.0.4 [*]:
