@@ -10,7 +10,7 @@ def baReminder():
         print("Battery is at", battery, "%")
         if battery < 10 or battery == 10:
             print("Please charge me...")
-        if battery == 20 and battery > 15 and battery < 20:
+        if battery == 20:
             print("Low Battery...")
         break
 baReminder()

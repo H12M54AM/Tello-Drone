@@ -53,7 +53,7 @@ def getKeyBoardInput():
     if kpm.getKey("f"): drone.get_flight_time()
     # screenshots img
     if kpm.getKey("c"): 
-        cv2.iamwrite(f'src/imgs/{time.time()}.jpg',img)
+        cv2.iamwrite(f"{time.time()}.jpg",img.frame)
         # Delay
         time.sleep(0.3) # For some reason the application crashes whenever I take a screenshot
         
