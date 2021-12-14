@@ -20,7 +20,7 @@ def getKeyBoardInput():
     # yv is yaw & velocity
     lr, fb, ud,  yv = 0, 0, 0, 0
     speed = 50
-
+    superspeed = 80
     # Move Left
     if kpm.getKey("LEFT"): lr  = -speed 
     # Move Right
@@ -37,9 +37,9 @@ def getKeyBoardInput():
     elif kpm.getKey("DOWN"): ud  = -speed
 
     # Turn Left
-    if kpm.getKey("d"): yv  = speed
+    if kpm.getKey("d"): yv  = superspeed
     # Turn Right
-    elif kpm.getKey("a"): yv  = -speed
+    elif kpm.getKey("a"): yv  = -superspeed
 
     # Takeoff
     if kpm.getKey("t"): drone.takeoff()
@@ -53,9 +53,9 @@ def getKeyBoardInput():
     if kpm.getKey("f"): drone.get_flight_time()
     # screenshots img
     if kpm.getKey("c"): 
-        cv2.iamwrite(f"{time.time()}.jpg",img.frame)
+        cv2.iamwrite(f"{time.time()}.jpg",img)
         # Delay
-        time.sleep(0.3) # For some reason the application crashes whenever I take a screenshot
+        time.sleep(1) # For some reason the application crashes whenever I take a screenshot
         
     return [lr, fb, ud, yv]
 

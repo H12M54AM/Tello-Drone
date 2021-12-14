@@ -5,13 +5,13 @@ import cv2
 from djitellopy import Tello
 import time
 
-tello = Tello()
-tello.connect()
+drone = Tello()
+drone.connect()
 
-tello.streamon()
-frame_read = tello.get_frame_read()
+drone.streamon()
+frame_read = drone.get_frame_read()
 
-tello.takeoff()
+drone.takeoff()
 cv2.imwrite(f"{time.time()}.jpg", frame_read.frame)
 
-tello.land()
+drone.land()
