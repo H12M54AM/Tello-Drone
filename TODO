@@ -19,18 +19,21 @@ Plan 1.0.2 [*]:
   √ Get the drone to see it's surroundings
   √ Hover
 
-Plan 1.0.3 []:
+Plan 1.0.3 [*]:
   √ Control the drone by using the keyboard
   √ Tricks with the drone (flips)
-  - Move around on it's own and look for the landing pad to land
 
 Plan 1.0.4 [*]:
   √ Stabilize the drone midflight
 
 Plan 1.0.5 []:
-  - Security gaurd (parking sensor)
   - Use OpenCV to understand the distance of things
+  - Security gaurd (parking sensor)
+
+Plan 1.0.6[]:
   - Automate some manual tasks (looking for a place to land)
+  - Move around on it's own and look for the landing pad to land
+
  
 getBattery[*]:
   √ Find a way to display the current battery percentage at a certain time

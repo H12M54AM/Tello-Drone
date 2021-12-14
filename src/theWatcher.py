@@ -55,7 +55,7 @@ def getKeyBoardInput():
     if kpm.getKey("c"): 
         cv2.iamwrite(f"{time.time()}.jpg",img)
         # Delay
-        time.sleep(1) # For some reason the application crashes whenever I take a screenshot
+        time.sleep(0.5) # For some reason the application crashes whenever I take a screenshot
         
     return [lr, fb, ud, yv]
 
