@@ -12,7 +12,7 @@ drone.connect()
 baReminder()
 drone.streamon()
 global img
-
+feed = drone.get_frame_read().frame
 def getKeyBoardInput():
     # lr is left & right
     # fb is front & back
@@ -53,9 +53,9 @@ def getKeyBoardInput():
     if kpm.getKey("f"): drone.get_flight_time()
     # screenshots img
     if kpm.getKey("c"): 
-        cv2.iamwrite(f"{time.time()}.jpg",img)
+        cv2.iamwrite(f"imgs/{time.time()}.jpg",feed)
         # Delay
-        time.sleep(0.5) # For some reason the application crashes whenever I take a screenshot
+        # time.sleep(0.5) # For some reason the application crashes whenever I take a screenshot
         
     return [lr, fb, ud, yv]
 
