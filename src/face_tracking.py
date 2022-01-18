@@ -1,7 +1,4 @@
-from ast import While
-from turtle import update
 import cv2
-import numpy as np
 import getBattery as GB
 from djitellopy import tello
 
