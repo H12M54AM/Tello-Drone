@@ -18,6 +18,7 @@ def getKeyBoardInput():
     # fb is front & back
     # ud is up & down
     # yv is yaw & velocity
+
     lr, fb, ud,  yv = 0, 0, 0, 0
     speed = 50
     superspeed = 80
@@ -55,8 +56,7 @@ def getKeyBoardInput():
     if kpm.getKey("c"): 
         cv2.iamwrite(f"imgs/{time.time()}.jpg",feed)
         # Delay
-        # time.sleep(0.5) # For some reason the application crashes whenever I take a screenshot
-        
+        # time.sleep(0.5) # For some reason the application crashes whenever I take a screenshot  
     return [lr, fb, ud, yv]
 
 baReminder()
