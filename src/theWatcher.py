@@ -1,11 +1,15 @@
+"""
+    This is the combination of both keyboardControl and imageCapture
+    make the string in 'getKey' the selected key to use. This is 
+    also the main program for flying around.
+"""
+
 from djitellopy import tello
 from modules import keyPressModule as kpm
 import time  
 from getBattery import baReminder 
 import cv2
 
-# This is the combination of both keyboardControl and imageCapture
-# make the string in 'getKey' the selected key to use
 kpm.init()
 drone = tello.Tello()
 drone.connect()

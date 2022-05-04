@@ -1,23 +1,26 @@
+"""
+    Here, the main route for the general movment for this
+    drone will be done here and all needed modules will 
+    be imported here. 
+
+"""
 from time import sleep
 from djitellopy import tello
 from getBattery import baReminder
-import datetime
-from Test.imageCapture import streamith
 
-# the absolute main file for the main activity
-curD = datetime.datetime.now()
 drone = tello.Tello()
-
 drone.connect()
-drone.takeoff()
-drone.rotate_clockwise(90)
-sleep(1)
 
-print(drone.get_height())
-drone.move_forward(40)
-drone.rotate_clockwise(90)
-drone.land()
-print(curD)
+def main():
+    drone.takeoff()
+    drone.rotate_clockwise(90)
+    sleep(1)
 
-# Function checks the battery status and prints out the exact percentage
-baReminder()
+    print(drone.get_height())
+    drone.rotate_clockwise(90)
+    drone.land()
+
+    # Function checks the battery status and prints out the exact percentage
+    baReminder()
+
+main()

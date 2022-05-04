@@ -32,7 +32,6 @@ def getKeyBoardInput():
     if kpm.getKey("t"): drone.takeoff()
     return [lr, fb, ud, yv]
 
-
 while True:
     vals = getKeyBoardInput() 
     drone.send_rc_control(vals[0], vals[1], vals[2], vals[3])

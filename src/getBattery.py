@@ -12,4 +12,5 @@ def baReminder():
         if battery < 10 or battery == 10:
             print("Please charge me...")
         break
+
 baReminder()

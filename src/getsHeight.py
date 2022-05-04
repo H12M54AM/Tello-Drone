@@ -1,3 +1,9 @@
+"""
+This program gets the height of the drone while it is
+in the air, output the current height and land with
+the battery reminder checking the current battery.
+"""
+
 from djitellopy import tello
 from time import sleep
 from getBattery import baReminder
