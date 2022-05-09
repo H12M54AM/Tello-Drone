@@ -17,6 +17,7 @@ baReminder()
 drone.streamon()
 global img
 feed = drone.get_frame_read().frame
+
 def getKeyBoardInput():
     # lr is left & right
     # fb is front & back

@@ -1,3 +1,11 @@
+"""
+    This program is a test to utilize the motors 
+    capabilities and allows the user to visually
+    check the current state of the propellers in
+    case of any impacts or potential failure 
+    that may occur in the future.
+"""
+
 from djitellopy import tello
 from getBattery import baReminder
 

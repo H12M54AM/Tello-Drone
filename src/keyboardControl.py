@@ -1,3 +1,9 @@
+"""
+    This file only allows the drone to be remotely 
+    controlled while it is connected, however, the
+    camera functionalities are not enabled. 
+"""
+
 from djitellopy import tello
 from modules import keyPressModule as kpm
 from time import sleep

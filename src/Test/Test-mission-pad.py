@@ -1,7 +1,10 @@
+"""
+    This is a direct replecation to the maker of the djitellopy 
+    module and is used for testing purpoese to double check if 
+    I understand
+"""
+
 from djitellopy import Tello
-# This is a direct replecation to the maker of the djitellopy 
-# module and is used for testing purpoese to double check if 
-# I understand
 
 # create and connect
 tello = Tello()

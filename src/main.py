@@ -1,5 +1,5 @@
 """
-    Here, the main route for the general movment for this
+    Here, the main route for the general movement for this
     drone will be done here and all needed modules will 
     be imported here. 
 

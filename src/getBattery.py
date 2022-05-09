@@ -1,3 +1,12 @@
+"""
+    The baRemider() funtion uses a while loop to 
+    check what the current battery is and will 
+    stop after it has made the check. This file
+    is often used and the baReminder() function
+    is often called to check the current capacity
+    the drone is at.
+"""
+
 from djitellopy import tello
 
 drone = tello.Tello()
